@@ -10,14 +10,6 @@ Puedes jugar la versión más reciente directamente en tu navegador:
 
 ---
 
-## 📸 Gameplay
-
-*(Te recomiendo grabar un GIF corto de tu juego y ponerlo aquí. Sube el GIF a tu repositorio y reemplaza la línea de abajo)*
-
-`![Gameplay de EscapeToSat](gameplay.gif)`
-
----
-
 ## 🕹️ Cómo Jugar
 
 Los controles son simples, pero el juego es brutal.
