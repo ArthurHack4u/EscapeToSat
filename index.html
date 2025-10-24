@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EscapeToSat 💸</title>
+    <link rel="stylesheet" href="assets/style.css"> 
+    <script src="script/app.js" defer></script> 
+</head>
+<body>
+    <h1>EscapeToSat 💸</h1>
+    
+    <div id="controls">
+        <div id="score-board">
+            Tiempo: <span id="time-survived">0</span>s
+            <span id="score-display">Puntos: <span id="points">0</span></span>
+            <span id="level-display-container">Nivel: <span id="level-display">1</span></span>
+        </div>
+    </div>
+
+    <div id="game-area" class="bg-grid">
+        </div>
+
+    <div id="countdown-overlay" class="hidden">3</div>
+    <div id="level-up-display" class="hidden">LEVEL UP!</div>
+
+    <div id="start-screen">
+        <div id="start-box" class="overlay-box">
+            <h2>¡Prepárate!</h2>
+            <p>Usa las <strong>Flechas</strong> para moverte y <strong>Espacio</strong> para un dash.</p>
+            <p>Escapa del SAT 👹 y sus minions, y atrapa los orbes dorados.</p>
+            
+            <div id="high-score-list">
+                <h3>Mejores Puntuaciones </h3>
+                <ol id="high-score-ol">
+                    <li>---</li>
+                    <li>---</li>
+                    <li>---</li>
+                </ol>
+            </div>
+            
+            <div class="start-buttons-container">
+                <button id="start-settings-button" class="button-secondary">Configuración</button>
+                <button id="start-button">Iniciar Juego</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="game-over-screen" class="hidden">
+        <div id="game-over-box" class="overlay-box">
+            <h2>¡Game Over!</h2>
+            <p>El SAT te ha atrapado.</p>
+            <p>Sobreviviste <span id="final-score">0</span> segundos.</p>
+            <p>Conseguiste <span id="final-points-score">0</span> puntos.</p>
+            <button id="restart-button">Volver al Menú</button>
+        </div>
+    </div>
+
+    <div id="settings-screen" class="hidden">
+        <div id="settings-box" class="overlay-box">
+            <h2>Configuración</h2>
+            
+            <div class="setting-item">
+                <label for="player-speed-slider">Velocidad del Jugador:</label>
+                <input type="range" id="player-speed-slider" min="1" max="10" value="5">
+                <span id="player-speed-value">5</span>
+            </div>
+
+            <div class="setting-item">
+                <label for="enemy-speed-slider">Velocidad Inicial del Enemigo:</label>
+                <input type="range" id="enemy-speed-slider" min="0.5" max="5" step="0.1" value="1.5">
+                <span id="enemy-speed-value">1.5</span>
+            </div>
+
+            <div class="setting-item">
+                <label for="background-select">Fondo del Juego:</label>
+                <select id="background-select">
+                    <option value="grid">Cuadrícula (Default)</option>
+                    <option value="dark">Oscuro</option>
+                    <option value="space">Espacio</option>
+                </select>
+            </div>
+            
+            <div class="setting-buttons">
+                <button id="save-settings-button">Guardar y Reiniciar</button>
+                <button id="close-settings-button">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <audio id="background-music" src="assets/phonk.mp3" loop></audio>
+
+</body>
+</html>
