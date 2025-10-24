@@ -47,7 +47,6 @@ Este proyecto es 100% "Vanilla" (sin frameworks), construido con las bases de la
     * Detección de colisiones.
     * Manejo de estado del juego (menús, pausa, juego).
     * Manipulación del DOM para efectos y UI.
-    * API de `Audio` para la música.
 * **"Backend" Falso:** Uso de `localStorage` para simular una base de datos y guardar las puntuaciones más altas.
 
 ---
